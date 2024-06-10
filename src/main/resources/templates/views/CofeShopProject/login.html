@@ -1,0 +1,178 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" th:href="@{/css/substyle.css}">
+        <title>Login</title>
+    </head> 
+    <body>
+        <main>
+            <header class="header">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#!">Menu</a></li>
+                        <li><a href="#!" onclick="showContent('content1')">Menu 1</a></li>
+                        <li><a href="#!" onclick="showContent('content2')">Menu 2</a></li>
+                        <li><a href="#!" onclick="showContent('content3')">Menu 3</a></li>
+                        <li><a href="#!" onclick="showContent('content4')">Menu 4</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <div class="titles">
+                        <h2 class="title">こんにちは。左のメニューから選択してください</h2>
+                        <div class="desc">こっちのプロジェクトは勉強するために作られています。
+                        ご利用させていただいた写真など。個人的の利益のためではありません。
+                        </div>
+                    </div>
+                    <div class="content" id="contentArea">
+                        <div class="content1">
+                            <h1 class="title">発注開始</h1>
+                            <div class="imgs">
+                                <!-- ......................menu 1----------------- -->
+                                <ul class="top kino">
+                                    <li onclick="showkino('kino1')">
+                                        <a href="#!">発注リスト</a>
+                                        <div class="kino1">
+                                            <div class="kinoContent">
+                                                <p>発注リスト</p>
+                                                <form action="" class="HC">
+                                                    <div class="HCContainer">
+                                                        <div class="leftHC">
+                                                            <div>
+                                                                <p>コーヒー種類A</p>
+                                                                <input type="number">
+                                                            </div>
+                                                            <div>
+                                                                <p>コーヒー種類Ｂ</p>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div>
+                                                                <p>コーヒー種類C</p>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="rightHC">
+                                                            <div>
+                                                                <p>コーヒー種類D</p>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div>
+                                                                <p>コーヒー種類E</p>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div>
+                                                                <p>コーヒー種類Ｆ</p>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="left1HC">
+                                                            <div>
+                                                                <p>ミルク</p>
+                                                                <input type="number">
+                                                            </div>
+                                                            <div>
+                                                                <p>袋</p>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div>
+                                                                <p>ティッシュ</p>
+                                                                <input type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit">submit</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li onclick="showkino('kino2')">
+                                        <a href="#!">発注確認</a>
+                                        <div class="kino2">
+                                            <div class="kinoContent">
+                                                <p>現在、何も表示されていないaaaaaaaaa</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li onclick="showkino('kino3')">
+                                        <a href="#!">SHOPS設定</a>
+                                        <div class="kino3">
+                                            <div class="kinoContent">
+                                                <p>現在、何も表示されていないbbbbbbbbbbb</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="bottom kino">
+                                    <li onclick="showkino('kino4')">
+                                        <a href="#!">発注サポート</a>
+                                        <div class="kino4">
+                                            <div class="kinoContent">
+                                                <p>現在、何も表示されていないccccccccc</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li onclick="showkino('kino5')">
+                                        <a href="#!">天気情報</a>
+                                        <div class="kino5">
+                                            <div class="kinoContent">
+                                                <p>現在、何も表示されていないddddddddd</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li onclick="showkino('kino6')">
+                                        <a href="#!">トラックルート</a>
+                                        <div class="kino6">
+                                            <div class="kinoContent">
+                                                <p>現在、何も表示されていないeeeeeeeee</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- ......................menu 1----------------- -->
+                            </div>
+                            
+                        </div>
+                        <div class="content2">
+                            <div class="imgs">
+                                <img src="https://i.pinimg.com/736x/e9/96/f9/e996f95565118c1350eec1e9dcbdad1f.jpg" alt="Placeholder Image B">
+                                <h3>内容</h3>
+                                <p>何もない</p>
+                            </div>
+                        </div>
+                        <div class="content3">
+                            <div class="imgs">
+                                <img src="https://i.pinimg.com/736x/e9/96/f9/e996f95565118c1350eec1e9dcbdad1f.jpg" alt="Placeholder Image C">
+                                <h3>内容</h3>
+                                <p>何もないです。</p>
+                            </div>
+                        </div>
+                        <div class="content4">
+                            <div class="imgs">
+                                <img src="https://i.pinimg.com/736x/e9/96/f9/e996f95565118c1350eec1e9dcbdad1f.jpg" alt="Placeholder Image D">
+                                <h3>内容</h3>
+                                <p>何もないです。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </main>
+        <script>
+            function showContent(contentId) {
+                const contents = document.querySelectorAll('.content > div');
+                contents.forEach(content => {
+                    content.style.display = 'none';
+                });
+                document.querySelector(`.${contentId}`).style.display = 'block';
+            }
+            function showkino(contentId) {
+                const kinoItems = document.querySelectorAll('.kinoContent');
+                kinoItems.forEach(kino => {
+                    kino.style.display = 'none';
+                });
+                document.querySelector(`.${contentId} .kinoContent`).style.display = "block";
+            }
+        </script>
+    </body>
+    </html>
